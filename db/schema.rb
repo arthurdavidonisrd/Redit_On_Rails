@@ -10,12 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_05_07_192725) do
+ActiveRecord::Schema[8.0].define(version: 2025_05_07_193959) do
   create_table "subreddits", force: :cascade do |t|
     t.string "title"
     t.text "body"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "slug"
+    t.index ["slug"], name: "index_subreddits_on_slug", unique: true
   end
 end
