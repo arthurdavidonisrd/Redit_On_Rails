@@ -24,22 +24,8 @@
 
 
   <body>
-    <header class="w-full bg-gray-900 p-8">
-      <%= link_to root_path, class: "flex justify-items-start items-center" do %>
-        <span class="text-white text-2xl font-bold">Redit</span>
-        <span class="text-white font-bold text-2xl">On</span>
-        <span class="text-red-600 font-bold text-2xl">Rails</span>
-      <% end %>
-      
-      <nav>
-        <ul>
-
-        </ul>
-      </nav>
-    </header>
+    <%= render partial: 'layouts/navbar' %>
     <main>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
       <%= yield %>
     </main>
   </body>

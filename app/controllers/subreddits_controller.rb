@@ -37,13 +37,15 @@ class SubredditsController < ApplicationController
 
   # PATCH/PUT /subreddits/1 or /subreddits/1.json
   def update
-    respond_to do |format|
-      if @subreddit.update(subreddit_params)
-        format.html { redirect_to @subreddit, notice: "Subreddit was successfully updated." }
-        format.json { render :show, status: :ok, location: @subreddit }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @subreddit.errors, status: :unprocessable_entity }
+    if current_user && current_user.id == @subreddit.user_id
+      respond_to do |format|
+        if @subreddit.update(subreddit_params)
+          format.html { redirect_to @subreddit, notice: "Subreddit was successfully updated." }
+          format.json { render :show, status: :ok, location: @subreddit }
+        else
+          format.html { render :edit, status: :unprocessable_entity }
+          format.json { render json: @subreddit.errors, status: :unprocessable_entity }
+        end
       end
     end
   end
