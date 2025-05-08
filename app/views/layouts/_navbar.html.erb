@@ -1,0 +1,24 @@
+<header class="w-full bg-gray-900 p-8 flex justify-between items-center">
+      <%= link_to root_path, class: "flex justify-items-start items-center" do %>
+        <span class="text-white text-2xl font-bold">Redit</span>
+        <span class="text-white font-bold text-2xl">On</span>
+        <span class="text-red-600 font-bold text-2xl">Rails</span>
+      <% end %>
+
+      <nav>
+        <ul class="flex items-center">
+          <% if user_signed_in? %>
+            <li class=" cursor-grab p-2 underline text-red-500" >
+              <%= link_to 'Sign Out', destroy_user_session_path, data: {turbo_method: :delete} %>
+            </li>
+          <% else %>
+            <li class="text-white cursor-grab p-2 underline">
+              <%= link_to 'Sign up', new_user_registration_path %>
+            </li>
+            <li class="text-white p-2 underline">
+              <%= link_to "Log In" , new_user_session_path %>
+            </li>
+          <% end %>
+        </ul>
+      </nav>
+</header>
