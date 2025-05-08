@@ -22,8 +22,22 @@
     <%= javascript_importmap_tags %>
   </head>
 
+
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <header class="w-full bg-gray-900 p-8">
+      <div class="flex justify-items-start items-center">
+        <span class="text-red-500 text-2xl font-bold">Ruby</span>
+        <span class="text-white font-bold text-2xl">OnDepre</span>
+      </div>
+      <nav>
+        <ul>
+
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <%= yield %>
     </main>
   </body>

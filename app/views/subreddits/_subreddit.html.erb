@@ -1,14 +1,11 @@
-<div id="<%= dom_id subreddit %>" class="w-full sm:w-auto my-5 space-y-5">
-  <div>
-    <strong class="block font-medium mb-1">Title:</strong>
-    <%= subreddit.title %>
+<%= link_to subreddit do  %>
+  <div id="<%= dom_id subreddit %>" class="w-full sm:w-auto my-8 p-4 bg-white rounded-xl space-y-6">
+      <div>
+        <p class=" text-black font-bold mb-10 mt-1 underline text-2xl"><%= subreddit.title %></p>
+      </div>
+
+      <div>
+        <p class="text-base text-gray-700 mt-1 whitespace-pre-line "><%= subreddit.body %></p>
+      </div>
   </div>
-  <div>
-    <strong class="block font-medium mb-1">Body:</strong>
-    <%= subreddit.body %>
-  </div>
-  <div>
-    <strong class="block font-medium mb-1">User:</strong>
-    <%= subreddit.user_id %>
-  </div>
-</div>
+<% end %>
