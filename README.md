@@ -43,7 +43,7 @@ Make sure you have the following installed:
 
 - [Ruby 3.3.0](https://www.ruby-lang.org/en/downloads/)
 - [Rails 8.0.2](https://rubyonrails.org/)
-- [Tailwind-for-Rails](https://tailwindcss.com/docs/installation/framework-guides/ruby-on-rails) 
+- [Tailwind-for-Rails](https://tailwindcss.com/docs/installation/framework-guides/ruby-on-rails) (Install after the project clone)
 - SQLite3 (usually comes installed on most systems)
 
 ### Setup Instructions
