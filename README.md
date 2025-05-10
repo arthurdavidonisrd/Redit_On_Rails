@@ -1,4 +1,4 @@
-# ReditOnRails
+# ReditOnRails (not finished yet)
 
 ## Project Purpose
 
@@ -26,3 +26,31 @@ It’s a perfect sandbox to experiment, break things, fix them, and learn how to
 
 ## Rails Version
 - 8.0.2
+
+## Database used
+- SQLite
+
+## Framework CSS 
+- TailwindCSS
+
+## How to Run the Project
+
+Follow the steps below to set up and run the ReditOnRails project locally on your machine.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Ruby 3.3.0](https://www.ruby-lang.org/en/downloads/)
+- [Rails 8.0.2](https://rubyonrails.org/)
+- [Tailwind-for-Rails](https://tailwindcss.com/docs/installation/framework-guides/ruby-on-rails) 
+- SQLite3 (usually comes installed on most systems)
+
+### Setup Instructions
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/seu-usuario/reditonrails.git
+cd redit_on_rails
+
