@@ -1,11 +1,7 @@
 <%= link_to subreddit do  %>
   <div id="<%= dom_id subreddit %>" class="w-full sm:w-auto my-8 p-4 bg-white rounded-xl space-y-6">
       <div>
-        <p class=" text-black font-bold mb-10 mt-1 underline text-2xl"><%= subreddit.title %></p>
-      </div>
-
-      <div>
-        <p class="text-base text-gray-700 mt-1 whitespace-pre-line "><%= subreddit.body %></p>
+        <p class=" text-center mx-auto text-black font-bold mb-10 mt-1 underline text-2xl"><%= subreddit.title %></p>
       </div>
   </div>
 <% end %>

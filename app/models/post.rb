@@ -5,5 +5,5 @@ class Post < ApplicationRecord
   belongs_to :subreddit
   belongs_to :user
 
-  has_one :image
+  has_one_attached :image
 end
