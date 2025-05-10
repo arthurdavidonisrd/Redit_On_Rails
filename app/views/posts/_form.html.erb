@@ -26,8 +26,7 @@
   </div>
 
   <div class="my-5">
-    <%= form.label :subreddit_id %>
-    <%= form.number_field :subreddit_id, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": post.errors[:subreddit_id].none?, "border-red-400 focus:outline-red-600": post.errors[:subreddit_id].any?}] %>
+    <%= form.number_field :subreddit_id, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": post.errors[:subreddit_id].none?, "border-red-400 focus:outline-red-600": post.errors[:subreddit_id].any?}], value: @subreddit.id, type: "hidden" %>
   </div>
 
   <div class="inline">

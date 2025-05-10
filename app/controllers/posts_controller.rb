@@ -13,6 +13,7 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
+    @subreddit = Subreddit.friendly.find(params[:subreddit_id])
   end
 
   # GET /posts/1/edit
