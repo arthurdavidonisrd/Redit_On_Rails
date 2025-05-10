@@ -53,4 +53,5 @@ Make sure you have the following installed:
 ```bash
 git clone https://github.com/seu-usuario/reditonrails.git
 cd redit_on_rails
+bin/dev
 
