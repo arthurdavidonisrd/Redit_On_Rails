@@ -51,7 +51,7 @@ Make sure you have the following installed:
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/seu-usuario/reditonrails.git
-cd redit_on_rails
+git clone https://github.com/arthurdavidonisrd/Redit_On_Rails.git
+cd Redit_On_Rails
 bin/dev
 
